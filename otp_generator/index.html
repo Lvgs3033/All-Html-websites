@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Generator</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+   <style>
+     * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #1b76f2;
+  }
+  .container {
+    background-color: #1a1820;
+    width: min(37.5em, 90%);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em;
+    border-radius: 0.5em;
+  }
+  h1 {
+    text-align: center;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  button {
+    font-size: 1em;
+    background-color: #1b76f2;
+    display: block;
+    margin: 2em auto;
+    padding: 1em;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+  }
+  #otpDisplay {
+    font-size: 1em;
+    background-color: #2a292e;
+    color: #ffffff;
+    letter-spacing: 1em;
+    text-align: center;
+    padding: 1em 0;
+  }
+   </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>OTP Generator</h1>
+      <button id="generateBtn">Generate OTP</button>
+      <p id="otpDisplay"></p>
+    </div>
+    <!-- Script -->
+    <script>
+      let generateOTP = () => {
+    //Define the length of the OTP
+    const otpLength = 6;
+  
+    // Generate a random numeric OTP with exactly 6 digits
+    const otp = Math.floor(100000 + Math.random() * 900000);
+  
+    //Display the generated OTP
+    document.getElementById("otpDisplay").innerText = `${otp}`;
+  };
+  
+  document.getElementById("generateBtn").addEventListener("click", generateOTP);
+  window.addEventListener("load", generateOTP);
+    </script>
+  </body>
+</html>

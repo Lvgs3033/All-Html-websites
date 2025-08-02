@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Universe</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+        .container{
+            background-color: black;
+        }
+        .progress {
+            background-color:blue;
+            height: 3px;
+            animation:load 1s ease-in-out 1;
+          }
+    
+     @keyframes load {
+            0%{
+                width: 0;
+            }
+            50%{
+                width: 40vw;
+            }
+            100%{
+                width: 100vw;
+            }
+          }
+    </style>
+  </head>
+  <body>
+    <div class="progress"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="images/2.png" alt="" height="50" />
+            </a>
+          </div>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Galaxy</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Topics
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#Parallel universe"
+                      >Parallel universe</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#Nebulas">Nebulas</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#Telescope">Telescope</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="# Quntum_physics"
+                      >Quantum Physics</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Unsolved Mystery
+                </a>
+  
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/Unsolved.html"
+                      >Quantum Gravity</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Unsolved.html"
+                      >Black Hole Paradox</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Unsolved.html"
+                      >Dark Matter & Dark Energy</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Unsolved.html"
+                      >Cosmological Constant</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Unsolved.html"
+                      >Hierarchy Problem</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Unsolved.html"
+                      >Color Confinement</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Unsolved.html"
+                      >Strong CP Problem</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-warning" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container my-4" style="color: white;">
+        <h2 class="heading my-4">Contact Us</h2>
+        <div class="container">
+            <h6>Click here for contact me on linkedin:</h6>
+            <a class="btn btn-primary" href="linkedin.com/in/dhvani-kakadiya-2811a8252" target="_blank" role="button">About me</a>
+          </div>
+        <form>
+            <div class="form-group my-4">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group my-4">
+                <label for="exampleFormControlSelect1">Select your Query</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Web</option>
+                    <option>Tech Stack</option>
+                    <option>Technology</option>
+                    <option>Others</option>
+                </select>
+            </div>
+            <div class="form-group row my-4">
+                <div class="col-sm-2">Are you a Member?</div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                            Yes
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row my-4">
+                <div class="col-sm-2">Are you a Professor?</div>
+                <div class="col-sm-10">
+                    <div class="form-check my-4">
+                        <input class="form-check-input" type="checkbox" id="gridCheck2">
+                        <label class="form-check-label" for="gridCheck2">
+                            Yes
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row my-4">
+                <div class="col-sm-2">Are you a Coder?</div>
+                <div class="col-sm-10">
+                    <div class="form-check my-4">
+                        <input class="form-check-input" type="checkbox" id="gridCheck3">
+                        <label class="form-check-label" for="gridCheck3">
+                            Yes
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group my-4">
+                <label for="exampleFormControlTextarea1">Tell us about yourself</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group my-4">
+                <label for="exampleFormControlTextarea2">Elaborate Your Concern</label>
+                <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary my-4">Submit</button>
+        </form>
+
+    </div>
+
+    <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+        <div class="card">
+          <div class="card-header">
+            Quote
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>There is a fifth dimension, beyond that which is known to man. It is a dimension as vast as space and as timeless as infinity. It is the middle ground between light and shadow, between science and superstition.</p>
+             <h6>Rod Serling</h6>
+            </blockquote>
+          </div>
+        </div>
+      </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
