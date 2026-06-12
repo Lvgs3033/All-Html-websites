@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universe</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: black;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .featurette-heading {
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      .lead {
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      @keyframes scaleIn {
+        from {
+          transform: scale(0.5);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+
+      .carousel_slide{
+        animation: scaleIn 2s ease-in-out;
+      }
+
+      .container_aosinit{
+        animation: scaleIn 2s ease-in-out;
+      }
+
+      .animated-image {
+        animation: scaleIn 2s ease-in-out;
+      }
+      .progress {
+        background-color:blue;
+        height: 3px;
+        animation:load 1s ease-in-out 1;
+      }
+
+ @keyframes load {
+        0%{
+            width: 0;
+        }
+        50%{
+            width: 40vw;
+        }
+        100%{
+            width: 100vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="progress"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/Universe/">
+          <img src="2.png" alt="" height="50" />
+        </a>
+      </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/Universe/">Galaxy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/Universe/index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/Universe/"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Topics
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#Parallel universe"
+                    >Parallel universe</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#Nebulas">Nebulas</a></li>
+                <li>
+                  <a class="dropdown-item" href="#Telescope">Telescope</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#Quntum_physics"
+                    >Quantum Physics</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/Universe/"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Unsolved Mystery
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/Universe/Unsolved.html"
+                    >Quantum Gravity</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Universe/Unsolved.html"
+                    >Black Hole Paradox</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Universe/Unsolved.html"
+                    >Dark Matter & Dark Energy</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Universe/Unsolved.html"
+                    >Cosmological Constant</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Universe/Unsolved.html"
+                    >Hierarchy Problem</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Universe/Unsolved.html"
+                    >Color Confinement</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Universe/Unsolved.html"
+                    >Strong CP Problem</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Universe/contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-warning" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div id="carouselExampleCaptions" class="carousel_slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="4.webp" class="d-block w-100" alt="..." height="500" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Milky Way Galaxy</h5>
+              <p>
+                They come in a variety of shapes and sizes. The Milky Way is a
+                large barred spiral galaxy. All the stars we see in the night
+                sky are in our own Milky Way Galaxy. Our galaxy is called the
+                Milky Way because it appears as a milky band of light in the sky
+                when you see it in a really dark area.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="5.png" class="d-block w-100" alt="..." height="500" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Universe</h5>
+              <p>
+                The universe is everything. It includes all of space, and all
+                the matter and energy that space contains. It even includes time
+                itself and, of course, it includes you. Earth and the Moon are
+                part of the universe, as are the other planets and their many
+                dozens of moons. What are the 3 types of universe? These are: A
+                flat universe with zero curvature. An open universe with a
+                curvature that does not curve back on itself. A closed universe
+                with a curvature that folds back on itself like a saddle.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="7.webp" class="d-block w-100" alt="..." height="500" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Dimensions of Universe</h5>
+              <p>
+                The world as we know it has 3 DIMENSIONS of space
+                length,width,and depth and one dimension of time. but there is
+                the mind-bending possibility that many more dimensions exist out
+                there. According to the string theory one of the leading physics
+                model of last half century ,the universe operates with 10
+                dimensions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <section>
+        <div class="container mt-4 text-white">
+          <div class="row">
+            <div
+              class="col-sm-12 col-md-6 col-lg-6 col-12 aos-init aos-animate"
+              data-aos="fade-right"
+              data-aos-offset="200"
+            >
+              <section id="solar system">
+                <h2 class="featurette-heading" style="color: Yellow">
+                  Solar System
+                </h2>
+                <p class="lead">
+                  solar system, assemblage consisting of the Sun—an average star
+                  in the Milky Way Galaxy—and those bodies orbiting around it: 8
+                  (formerly 9) planets with more than 210 known planetary
+                  satellites (moons); many asteroids, some with their own
+                  satellites; comets and other icy bodies; and vast reaches of
+                  highly tenuous gas
+                </p>
+              </section>
+              <a
+                href="https://en.wikipedia.org/wiki/Solar_System"
+                class="btn btn-info"
+                >Read from wikipedia</a
+              >
+            </div>
+            <div
+              class="col-sm-12 col-md-6 col-lg-6 col-12 aos-init aos-animate"
+              data-aos="fade-up-left"
+              data-aos-offset="200"
+            >
+              <img class="animated-image" src="8.jpg" alt="Sun" height="300" />
+            </div>
+            <hr class="mt-4" />
+
+            <div
+              class="row featurette my-4 aos-init aos-animate"
+              data-aos="fade-up-right"
+              data-aos-offset="200"
+            >
+              <div class="col-md-7 order-md-2">
+                <section id="Parallel universe">
+                  <h3 class="featurette-heading" style="color: blue">
+                    Parallel universe
+                  </h3>
+                  <p class="lead">
+                    an imaginary world that does not really exist: "The media is
+                    living in a parallel universe," he said. "In the real world,
+                    people are noticing that things are improving." Even though
+                    certain features of the universe seem to require the
+                    existence of a multiverse, nothing has been directly
+                    observed that suggests it actually exists. So far, the
+                    evidence supporting the idea of a multiverse is purely
+                    theoretical, and in some cases, philosophical.
+                  </p>
+                </section>
+                <a
+                  href="https://en.wikipedia.org/wiki/Parallel_universe"
+                  class="btn btn-info"
+                  >Read from wikipedia</a
+                >
+              </div>
+              <div
+                class="col-md-5 order-md-1 aos-init aos-animate"
+                data-aos="fade-up-left"
+                data-aos-offset="200"
+              >
+                <img
+                  class="animated-image"
+                  src="9.avif"
+                  alt="Parallel uiverse"
+                  height="250"
+                />
+              </div>
+            </div>
+            <hr class="mt-4" />
+
+            <div
+              class="col-sm-12 col-md-6 col-lg-6 col-12 aos-init aos-animate"
+              data-aos="fade-right"
+              data-aos-offset="200"
+            >
+              <section id="Nebulas">
+                <h2 class="featurette-heading" style="color: rgb(0, 217, 255)">
+                  Nebulas
+                </h2>
+                <p class="lead">
+                  A nebula is a giant cloud of dust and gas in space. Some
+                  nebulae (more than one nebula) come from the gas and dust
+                  thrown out by the explosion of a dying star, such as a
+                  supernova. Other nebulae are regions where new stars are
+                  beginning to form. For this reason, some nebulae are called
+                  "star nurseries."
+                </p>
+              </section>
+              <a
+                href="https://en.wikipedia.org/wiki/Nebula"
+                class="btn btn-info"
+                >Read from wikipedia</a
+              >
+            </div>
+            <div
+              class="col-sm-12 col-md-6 col-lg-6 col-12 aos-init aos-animate"
+              data-aos="fade-up-left"
+              data-aos-offset="200"
+            >
+              <img
+                class="animated-image"
+                src="10.jpeg"
+                alt=" Nebulas "
+                height="300"
+              />
+            </div>
+            <hr class="mt-4" />
+
+            <div
+              class="row featurette my-4 aos-init aos-animate"
+              data-aos="fade-up-right"
+              data-aos-offset="200"
+            >
+              <div class="col-md-7 order-md-2">
+                <section id="Telescope">
+                  <h3 class="featurette-heading" style="color: grey">
+                    Telescope
+                  </h3>
+                  <p class="lead">
+                    If you're new to the world of astronomy it's important to
+                    learn about the types of telescopes available. Most
+                    telescopes will fall into one of three categories:
+                    refractors (which use lenses to bend light into focus),
+                    reflectors (which use mirrors that reflect light into
+                    focus), and catadioptric or compound scopes, (which use a
+                    combination of both lenses and mirrors). While you might
+                    hear other specific terms for telescope types mentioned,
+                    such as “Dobsonian” or “Schmidt-Cassegrain,” most of these
+                    other types of telescopes are actually variants of the basic
+                    three, such as a Dobsonian being a type of reflector or a
+                    Schmidt-Cassegrain being a type of catadioptric telescope.
+                  </p>
+                </section>
+                <a
+                  href="https://en.wikipedia.org/wiki/Telescope"
+                  class="btn btn-info"
+                  >Read from wikipedia</a
+                >
+              </div>
+              <div
+                class="col-md-5 order-md-1 aos-init aos-animate"
+                data-aos="fade-up-left"
+                data-aos-offset="200"
+              >
+                <img
+                  class="animated-image"
+                  src="14.jpg"
+                  alt="Telescope"
+                  height="250"
+                />
+              </div>
+            </div>
+            <hr class="mt-4" />
+
+            <div
+              class="col-sm-12 col-md-6 col-lg-6 col-12 aos-init aos-animate"
+              data-aos="fade-right"
+              data-aos-offset="200"
+            >
+              <section id=" Quntum_physics">
+                <h2 class="featurette-heading" style="color: pink">
+                  Quantum Physics
+                </h2>
+                <p class="lead">
+                  The difficulty and, for physicists, the fun starts here. To
+                  begin with, there's no single quantum theory. There's quantum
+                  mechanics, the basic mathematical framework that underpins it
+                  all, which was first developed in the 1920s by Niels Bohr,
+                  Werner Heisenberg, Erwin Schrödinger and others. It
+                  characterises simple things such as how the position or
+                  momentum of a single particle or group of few particles
+                  changes over time.
+                </p>
+              </section>
+              <a
+                href="https://en.wikipedia.org/wiki/Quantum_mechanics"
+                class="btn btn-info"
+                >Read from wikipedia</a
+              >
+            </div>
+            <div
+              class="col-sm-12 col-md-6 col-lg-6 col-12 aos-init aos-animate"
+              data-aos="fade-up-left"
+              data-aos-offset="200"
+            >
+              <img
+                class="animated-image"
+                src="15.avif"
+                alt="Quantum Physics"
+                height="300"
+              />
+            </div>
+            <hr class="mt-4" />
+
+            <div
+              class="row featurette my-4 aos-init aos-animate"
+              data-aos="fade-up-right"
+              data-aos-offset="200"
+            >
+              <div class="col-md-7 order-md-2">
+                <section id="Telescope">
+                  <h3
+                    class="featurette-heading"
+                    style="color: rgb(0, 129, 103)"
+                  >
+                    Higgsboson particales
+                  </h3>
+                  <p class="lead">
+                    The particle that we now call the Higgs boson first appeared
+                    in a scientific paper written by Peter Higgs in 1964. At
+                    that time, physicists were working on describing the weak
+                    force one of the four fundamental forces of Nature – using a
+                    framework called quantum field theory.
+                  </p>
+                </section>
+                <a
+                  href="https://en.wikipedia.org/wiki/Higgs_boson"
+                  class="btn btn-info"
+                  >Read from wikipedia</a
+                >
+              </div>
+              <div
+                class="col-md-5 order-md-1 aos-init aos-animate"
+                data-aos="fade-up-left"
+                data-aos-offset="200"
+              >
+                <img
+                  class="animated-image"
+                  src="16.png"
+                  alt="Telescope"
+                  height="250"
+                />
+              </div>
+            </div>
+            <hr class="mt-4" />
+
+            <div
+              class="col-sm-12 col-md-6 col-lg-6 col-12 aos-init aos-animate"
+              data-aos="fade-right"
+              data-aos-offset="200"
+            >
+              <section id="Time_Travalling">
+                <h2 class="featurette-heading" style="color: lightskyblue">
+                  Time Travalling
+                </h2>
+                <p class="lead">
+                  Although many people are fascinated by the idea of changing
+                  the past or seeing the future before it's due, no person has
+                  ever demonstrated the kind of back-and-forth time travel seen
+                  in science fiction or proposed a method of sending a person
+                  through significant periods of time that wouldn't destroy them
+                  on the way. And, as physicist Stephen Hawking pointed out in
+                  his book "Black Holes and Baby Universes" (Bantam, 1994), "The
+                  best evidence we have that time travel is not possible, and
+                  never will be, is that we have not been invaded by hordes of
+                  tourists from the future."
+                </p>
+              </section>
+              <a
+                href="https://en.wikipedia.org/wiki/Time_travel#:~:text=by%20mechanical%20means.-,Time%20travel%20in%20physics,geometries%20or%20motions%20were%20possible."
+                class="btn btn-primary"
+                class="btn btn-info"
+                >Read from wikipedia</a
+              >
+            </div>
+            <div
+              class="col-sm-12 col-md-6 col-lg-6 col-12 aos-init aos-animate"
+              data-aos="fade-up-left"
+              data-aos-offset="200"
+            >
+              <img
+                class="animated-image"
+                src="13.jpeg"
+                alt="Time Travelling"
+                height="300"
+              />
+            </div>
+            <hr class="mt-4" />
+          </div>
+        </div>
+      </section>
+
+      <div class="container_aosinit" data-aos="zoom-in" data-aos-offset="150">
+        <h3 class="text-center text-white mb-4">Celestial objects</h3>
+        <div class="row">
+          <div
+            class="col-sm-12 col-md-4 col-lg-4 col-12 mb-3 d-flex justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img src="11.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">Black Holes</h4>
+                <p class="card-text">
+                  The idea of an object in space so massive and dense that light
+                  could not escape it has been around for centuries. Most
+                  famously, black holes were predicted by Einstein's theory of
+                  general relativity, which showed that when a massive star
+                  dies, it leaves behind a small, dense remnant core. If the
+                  core's mass is more than about three times the mass of the
+                  Sun, the equations showed, the force of gravity overwhelms all
+                  other forces and produces a black hole.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Black_hole"
+                  class="btn btn-primary"
+                  >More Understand</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-sm-12 col-md-4 col-lg-4 col-12 mb-3 d-flex justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img src="12.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">White Holes</h4>
+                <p class="card-text">
+                  White holes are theoretical cosmic regions that function in
+                  the opposite way to black holes. Just as nothing can escape a
+                  black hole, nothing can enter a white hole.White holes were
+                  long thought to be a figment of general relativity born from
+                  the same equations as their collapsed star brethren, black
+                  holes. More recently, however, some theorists have been asking
+                  whether these twin vortices of spacetime may be two sides of
+                  the same coin.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/White_hole"
+                  class="btn btn-primary"
+                  >More Understand</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-sm-12 col-md-4 col-lg-4 col-12 mb-3 d-flex justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img src="17.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">Pleiades</h4>
+                <p class="card-text">
+                  The Pleiades star cluster is also famously known as the Seven
+                  Sisters. Or, to some, it's known as Messier 45 (M45) on the
+                  list of Messier objects. The Pleiades is visible from almost
+                  every part of the globe. It's seen from as far north as the
+                  North Pole and farther south than the southernmost tip of
+                  South America.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Pleiades"
+                  class="btn btn-primary"
+                  >More Understand</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <hr class="mt-4" style="color: pink" />
+        </div>
+      </div>
+
+      <div
+        class="container aos-init"
+        data-aos="zoom-in-up"
+        data-aos-offset="200"
+      >
+        <div class="card-header text-center text-white">
+          <h5>Other space advanture</h5>
+        </div>
+        <div
+          class="accordion accordion-flush bg-dark"
+          id="accordionFlushExample"
+        >
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Extinct science invention
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+              style="color: blueviolet"
+            >
+              <div class="accordion-body">
+                Extinct Species List 1690 Dodo bird extinct from predation by
+                introduced pigs and cats. 1768 Stellar's sea cow extinct from
+                hunting for fur and oil. 1870 Labrador duck extinct from human
+                competition for mussels and other shellfish. 1900 Rocky mountain
+                locust extinct from habitat conversion to farmland.
+              </div>
+              <div class="btn d-flex justify-content-center">
+                <a
+                  href="https://en.wikipedia.org/wiki/List_of_obsolete_technology"
+                  target="_blank"
+                  class="btn btn-info text-center"
+                  >Explore More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Interesting space movies
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+              style="color: blueviolet"
+            >
+              <div class="accordion-body">
+                In the vast realm of cinema, space movies have consistently
+                captured the imagination of audiences, taking them on
+                interstellar journeys that transcend the boundaries of our
+                earthly existence. These films not only entertain but also
+                provoke contemplation about the mysteries of the cosmos and our
+                place within it. Here's a note on some of the most interesting
+                space movies that have left an indelible mark on cinematic
+                history:
+              </div>
+              <div class="btn d-flex justify-content-center">
+                <a
+                  href="https://www.imdb.com/search/keyword/?keywords=space-exploration"
+                  target="_blank"
+                  class="btn btn-info text-center"
+                  >Read more</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Galaxy scientists
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+              style="color: blueviolet"
+            >
+              <div class="accordion-body">
+                Thomas Edison, Nikola Tesla, Albert Einstein, Stephen Hawking,
+                Isaac Newton, Nicolaus Copernicus, Ramanujan,Homi J.Bhabha,Dr
+                Thanu Padmanabhan,Galileo Galilei and Dmitri Mendeleev - all of
+                them have made a great contribution to science with their
+                inventions, discoveries and ideas.
+              </div>
+              <div class="btn d-flex justify-content-center">
+                <a
+                  href="https://www.discovermagazine.com/the-sciences/the-10-greatest-scientists-of-all-time"
+                  target="_blank"
+                  class="btn btn-info text-center"
+                  >Read more</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="true"
+                aria-controls="flush-collapseFour"
+              >
+                Secret projects
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse show"
+              aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample"
+              style="color: blueviolet"
+            >
+              <div class="accordion-body">
+                There are many secret projects in science like alien research by
+                US in area 51,teleporting by electric field,time traveling by
+                jacob's ladder,Magnifying transmitter,Tesla coilDeath
+                ray,chronovisor
+              </div>
+              <div class="btn d-flex justify-content-center">
+                <a
+                  href="https://youtu.be/bkINcTVwWyI?feature=shared"
+                  target="_blank"
+                  class="btn btn-info text-center"
+                  >Read more</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-4" />
+
+      <div class="container my-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">DIsturbing secret of science</h5>
+            <p class="card-text">DISTURBING SECRET SCIENCE EXPERIMENTS THAT ACTUALLY HAPPENED</p>
+            <a href="https://www.grunge.com/29176/disturbing-secret-science-experiments-actually-happened/" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+       <div class="container my-4">
+        <li class="btn btn-primary">
+          <a
+            class="nav-link dropdown-toggle"
+            href="/Universe/"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+           Space Egencies
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="https://www.isro.gov.in/"
+                >ISRO</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="https://www.nasa.gov/">NASA</a></li>
+            <li>
+              <a class="dropdown-item" href="https://uksa.org/">The UKSA</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="https://global.jaxa.jp/"
+                >JAXA</a>
+            </li>
+          </ul>
+        </li>
+      </div>
+        
+      </div>
+    </main>
+    <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+      <div class="card">
+        <div class="card-header">
+          Quote
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>There is a fifth dimension, beyond that which is known to man. It is a dimension as vast as space and as timeless as infinity. It is the middle ground between light and shadow, between science and superstition.</p>
+           <h6>Rod Serling</h6>
+          </blockquote>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

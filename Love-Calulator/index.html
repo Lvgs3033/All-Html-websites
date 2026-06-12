@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love calculator</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-image: url("./hearts.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        #content-box{
+            width: 400px;
+            height: 500px;
+            background-color: whitesmoke;
+            padding: 20px;
+            margin: 0 auto;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+        
+        #calculate{
+            width: 150px;
+            height: 50px;
+            background-color: pink;
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+        }
+        
+        #result-percentage{
+            font-size: 50px;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            let button=document.getElementById("calculate");
+            button.addEventListener("click",calculateLove);
+        }
+        
+        function calculateLove(){
+            let yourName=document.getElementById("your-name").value;
+            let crushName=document.getElementById("crush-name").value;
+        
+            if(yourName!="" && crushName!=""){
+                let percentage=Math.floor(Math.random()*101);
+                document.getElementById("result-message").innerText=yourName+"and"+crushName+"'s chance of love:";
+                document.getElementById("result-percentage").innerText=percentage.toString()+"%";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="content-box">
+        <h1>Love calculator</h1>
+        <p>Enter your name and your crush's name to see the chance that this relationship will work out:</p>
+        <br>
+        <label for="your-name">Your Name:</label>
+        <input type="text" id="your-name" name="your-name"><br><br>
+        <label for="crush-name">Crush's Name:</label>
+        <input type="text" id="crush-name" name="crush-name"><br><br>
+
+        <button id="calculate">calculate</button>
+
+        <h2 id="result-message"></h2>
+        <p id="result-percentage"></p>
+    </div>
+</body>
+</html>

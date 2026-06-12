@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Universe</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+        body {
+          background-color: black;
+        } 
+        @keyframes fadeIn {
+          from {
+              opacity: 0;
+          }
+          to {
+              opacity: 1;
+          }
+      }
+  
+      .featurette-heading{
+        animation: fadeIn 2s ease-in-out;
+      }
+  
+      .lead {
+          animation: fadeIn 2s ease-in-out;
+      }
+  
+      @keyframes scaleIn {
+          from {
+              transform: scale(0.5);
+          }
+          to {
+              transform: scale(1);
+          }
+      }
+  
+      .animated-image {
+          animation: scaleIn 2s ease-in-out;
+      }
+
+      .progress {
+        background-color:blue;
+        height: 3px;
+        animation:load 1s ease-in-out 1;
+      }
+
+ @keyframes load {
+        0%{
+            width: 0;
+        }
+        50%{
+            width: 40vw;
+        }
+        100%{
+            width: 100vw;
+        }
+      }
+      </style>
+  </head>
+  <body>
+    <div class="progress"></div>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/Universe/">
+          <img src="2.png" alt="" height="50" />
+        </a>
+      </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/Universe/">Galaxy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/Universe/index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/Universe/"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Topics
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#Parallel universe">Parallel universe</a></li>
+                <li><a class="dropdown-item" href="#Nebulas">Nebulas</a></li>
+                <li><a class="dropdown-item" href="#Telescope">Telescope</a></li>
+                <li><a class="dropdown-item" href="# Quntum_physics">Quantum Physics</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/Universe/"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Unsolved Mystery
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/Universe/Unsolve.html">Quantum Gravity</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Black Hole Paradox</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Dark Matter & Dark Energy</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Cosmological Constant</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Hierarchy Problemy</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Color Confinement</a></li>
+                <li><a class="dropdown-item" href="#">Strong CP Problem</a></li>
+               
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-warning" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <section>
+        <div class="container mt-4 text-white">
+          <div class="row">
+            
+            <div
+              class="col-sm-12 col-md-6 col-lg-6 col-12 aos-init aos-animate"
+              data-aos="fade-right"
+              data-aos-offset="200"
+            >
+              <section id="Quantum_Gravity">
+                <h3 class="featurette-heading" style="color:cornflowerblue">Quantum Gravity</h3>
+                <p class="lead">Quantum Gravity, broadly construed, is a physical theory (still ‘under construction’) incorporating both the principles of general relativity and quantum theory. Such a theory is expected to be able to provide a satisfactory description of the microstructure of spacetime at the so-called Planck scale, at which all fundamental constants of the ingredient theories, c (the velocity of light in vacuo), ℏ (the reduced Planck’s constant), and G (Newton’s constant), come together to form units of mass, length, and time. This scale is so remote from current experimental capabilities that the empirical testing of quantum gravity proposals along standard lines is rendered near-impossible.</p>
+              </section>
+              <a
+                href="https://en.wikipedia.org/wiki/Quantum_gravity"
+                class="btn btn-info">Read from wikipedia</a>
+            </div>
+            <div
+              class="col-sm-12 col-md-6 col-lg-6 col-12 aos-init aos-animate"
+              data-aos="fade-up-left"
+              data-aos-offset="200"
+            >
+              <img class="animated-image" src="18.jpeg" alt="Sun" height="300">
+            </div>
+            <hr class="mt-4">
+  
+            <div
+              class="row featurette my-4 aos-init aos-animate" data-aos="fade-up-right" data-aos-offset="200">
+              <div class="col-md-7 order-md-2">
+                <section id="BlackHole_Paradox">
+                  <h3 class="featurette-heading" style="color:cornflowerblue">Black Hole Paradox</h3>
+                  <p class="lead">The black hole information paradox is a paradox that appears when the predictions of quantum mechanics and general relativity are combined. The theory of general relativity predicts the existence of black holes that are regions of spacetime from which nothing—not even light—can escape.</p>
+              </section>
+                  <a href="https://en.wikipedia.org/wiki/Black_hole_information_paradox#:~:text=The%20black%20hole%20information%20paradox,not%20even%20light%E2%80%94can%20escape." class="btn btn-info">Read from wikipedia</a>
+              </div>
+              <div class="col-md-5 order-md-1 aos-init aos-animate" data-aos="fade-up-left"
+              data-aos-offset="200">
+                <img class="animated-image" src="19.jpeg" alt="Parallel uiverse" height="250">
+              </div>
+            </div>
+            <hr class="mt-4">
+  
+            <div
+              class="col-sm-12 col-md-6 col-lg-6 col-12 aos-init aos-animate"
+              data-aos="fade-right"
+              data-aos-offset="200"
+            >
+              <section id="DarkMatter_DarkEnergy">
+                <h3 class="featurette-heading" style="color:cornflowerblue">Dark Matter & Dark Energy</h3>
+                <p class="lead">More is unknown than is known. We know how much dark energy there is because we know how it affects the universe's expansion. Other than that, it is a complete mystery. But it is an important mystery. It turns out that roughly 68% of the universe is dark energy. Dark matter makes up about 27%. The rest - everything on Earth, everything ever observed with all of our instruments, all normal matter - adds up to less than 5% of the universe. Come to think of it, maybe it shouldn't be called "normal" matter at all, since it is such a small fraction of the universe.</p>
+              </section>
+              <a
+                href="https://en.wikipedia.org/wiki/Dark_matter"
+                class="btn btn-info">Read from wikipedia</a>
+            </div>
+            <div
+              class="col-sm-12 col-md-6 col-lg-6 col-12 aos-init aos-animate"
+              data-aos="fade-up-left"
+              data-aos-offset="200"
+            >
+              <img class="animated-image" src="20.webp" alt="Sun" height="300">
+            </div>
+            <hr class="mt-4">
+  
+            <div
+            class="row featurette my-4 aos-init aos-animate" data-aos="fade-up-right" data-aos-offset="200">
+            <div class="col-md-7 order-md-2">
+              <section id="Cosmological_Constant">
+                <h3 class="featurette-heading" style="color:cornflowerblue">Cosmological Constant</h3>
+                <p class="lead">In the context of cosmology the cosmological constant is a homogeneous energy density that causes the expansion of the universe to accelerate. Originally proposed early in the development of general relativity in order to allow a static universe solution it was subsequently abandoned when the universe was found to be expanding. Now the cosmological constant is invoked to explain the observed acceleration of the expansion of the universe. The cosmological constant is the simplest realization of dark energy, which is the more generic name given to the unknown cause of the acceleration of the universe. Its existence is also predicted by quantum physics, where it enters as a form of vacuum energy, although the magnitude predicted by quantum theory does not match that observed in cosmology.</p>
+            </section>
+                <a href="https://en.wikipedia.org/wiki/Cosmological_constant" class="btn btn-info">Read from wikipedia</a>
+            </div>
+            <div class="col-md-5 order-md-1 aos-init aos-animate" data-aos="fade-up-left"
+            data-aos-offset="200">
+              <img class="animated-image" src="21.webp" alt="Parallel uiverse" height="250">
+            </div>
+          </div>
+          <hr class="mt-4">
+
+          <div
+          class="col-sm-12 col-md-6 col-lg-6 col-12 aos-init aos-animate"
+          data-aos="fade-right"
+          data-aos-offset="200"
+        >
+          <section id="Hierarchy_Problem">
+            <h3 class="featurette-heading" style="color:cornflowerblue">Hierarchy Problem</h3>
+            <p class="lead">An important feature of nature that puzzles scientists like myself is known as the hierarchy, meaning the vast discrepancy between aspects of the weak nuclear force and gravity. There are several different ways to describe this hierarchy, each emphasizing a different feature of it. Here is one:
+
+                The mass of the smallest possible black hole defines what is known as the Planck Mass. [Planck was the scientist who took the first step towards quantum mechanics.] (A more precise way to define this is as a combination of Newton’s gravitational constant G, Planck’s quantum constant h-bar, and the speed of light c: the Planck mass is the square root of h-bar times c divided by G.) The masses of the W and Z particles, the force carriers of the weak nuclear force, are about 10,000,000,000,000,000 times smaller than the Planck Mass. Thus there is a huge hierarchy in the mass scales of weak nuclear forces and gravity.</p>
+          </section>
+          <a
+            href="https://en.wikipedia.org/wiki/Hierarchy_problem"
+            class="btn btn-info">Read from wikipedia</a>
+        </div>
+        <div
+          class="col-sm-12 col-md-6 col-lg-6 col-12 aos-init aos-animate"
+          data-aos="fade-up-left"
+          data-aos-offset="200"
+        >
+          <img class="animated-image" src="22.jpeg" alt="Sun" height="300">
+        </div>
+        <hr class="mt-4">
+
+
+        <div
+            class="row featurette my-4 aos-init aos-animate" data-aos="fade-up-right" data-aos-offset="200">
+            <div class="col-md-7 order-md-2">
+              <section id="Color_Confinement">
+                <h3 class="featurette-heading" style="color:cornflowerblue">Color Confinement</h3>
+                <p class="lead">We know that Strong interaction is mediated by Gluon particles. Quark exchanges Gluon with another quark or anti-Quark and forms hadrons that includes 'Baryons' (nucleons and hyperons) and 'Mesons'.....</p>
+            </section>
+                <a href="https://en.wikipedia.org/wiki/Color_confinement" class="btn btn-info">Read from wikipedia</a>
+            </div>
+            <div class="col-md-5 order-md-1 aos-init aos-animate" data-aos="fade-up-left"
+            data-aos-offset="200">
+              <img class="animated-image mt-4" src="23.webp" alt="Parallel uiverse" height="150">
+            </div>
+          </div>
+          <hr class="mt-4">
+
+          <div
+          class="col-sm-12 col-md-6 col-lg-6 col-12 aos-init aos-animate"
+          data-aos="fade-right"
+          data-aos-offset="200"
+        >
+          <section id="StrongCP_Problem">
+            <h3 class="featurette-heading" style="color:cornflowerblue">Strong CP Problem</h3>
+            <p class="lead">If you ask a physicist what the biggest unsolved problem facing the field today is, you're likely to get a variety of answers. Some will point to the hierarchy problem, wondering why the masses of the Standard Model particles have the (small) values we observe. Others will ask about baryogenesis, asking why the Universe is filled with matter but not antimatter. Other popular answers are just as puzzling: dark matter, dark energy, quantum gravity, the origin of the Universe, and whether there's an ultimate theory of everything for us to discover...</p>
+          </section>
+          <a
+            href="https://en.wikipedia.org/wiki/Strong_CP_problem"
+            class="btn btn-info">Read from wikipedia</a>
+        </div>
+        <div
+          class="col-sm-12 col-md-6 col-lg-6 col-12 aos-init aos-animate"
+          data-aos="fade-up-left"
+          data-aos-offset="200"
+        >
+          <img class="animated-image" src="24.webp" alt="Sun" height="300">
+        </div>
+        <hr class="mt-4">
+
+
+          </div>
+        </div>
+      </section>
+      <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+        <div class="card">
+          <div class="card-header">
+            Quote
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>There is a fifth dimension, beyond that which is known to man. It is a dimension as vast as space and as timeless as infinity. It is the middle ground between light and shadow, between science and superstition.</p>
+             <h6>Rod Serling</h6>
+            </blockquote>
+          </div>
+        </div>
+      </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
